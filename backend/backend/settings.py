@@ -25,10 +25,13 @@ SECRET_KEY = 'django-insecure-*5-+x%@k@kme!yw^r@x@3qct%8kze#nfx5!jcpc==_9lo%b073
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['studentmanagementapp-1-kicn.onrender.com']
+ALLOWED_HOSTS = ["studentmanagementapp-1-kicn.onrender.com","localhost", "127.0.0.1","https://studentmanagementapp-2-7iel.onrender.com/"]
 
 CORS_ORIGIN_ALLOW_ALL = True
 # Application definition
+CORS_ALLOWED_ORIGINS = [
+    "127.0.0.1","https://studentmanagementapp-2-7iel.onrender.com/",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
